@@ -1,0 +1,68 @@
+#include<iostream>
+using namespace std;
+
+
+class Books{
+public:
+   string title;
+   double price;
+   int *stock = new int;
+
+
+   Books(){
+       title = "unknown";
+       price = 0.0;
+       *stock = 30;
+
+   }
+
+   void setprice(double p){
+     price = p;
+   }
+   
+
+   double getprice(){
+       return price;
+   }
+int quantity;
+
+void update_stock(){
+   
+  cout<<"enter how many stock you want "<<endl;
+  cin>>quantity;
+if(*stock >= quantity){
+   cout<<"stock available: "<<*stock<<endl;
+    *stock -=quantity;
+   
+   book_purchase();
+   
+ if(*stock < 5 ){
+   cout<<"WARNING! low stock "<<endl;
+    cout<<"stock remains: "<<*stock<<endl;
+}
+else{
+   cout<<"stock remains: "<<*stock<<endl;
+}
+}
+else{
+   cout<<"stock is not available"<<endl;
+}
+}
+
+void book_purchase(){
+    int totalprice =  quantity*price;
+
+   cout<<"book purchases price is: " <<totalprice<<endl;
+
+}
+};
+
+int main(){
+ Books b1;
+ b1.setprice(100.00);
+ b1.update_stock();
+
+return 0;
+
+
+}
