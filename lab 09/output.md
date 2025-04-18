@@ -5,5 +5,7 @@
 # task 04:
 ![image](https://github.com/user-attachments/assets/ca2b78f2-43b2-4505-8dd1-4ef9afcf3e05)
 # task 05:
+![image](https://github.com/user-attachments/assets/ea4fe036-2022-4688-9a4d-0fc61f6ffafe)
 
-# task 03
+# task 03:
+
